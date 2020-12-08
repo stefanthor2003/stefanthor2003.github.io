@@ -1,0 +1,123 @@
+body {
+    max-width: 60em;
+    margin: 0 auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-style: italic;
+    color: brown;
+    text-align: center;
+
+}
+.header a {
+    display: block;
+    text-align: center;
+    border: 1px solid;
+}
+.topmenu {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    list-style-type: none;
+    border: 1px solid;
+}
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+/********** name area ***********/
+.header {
+    grid-area: header;
+    border: 1px solid;
+}
+.topnav {
+    grid-area: topnav;
+}
+.main {
+    grid-area: main;
+    grid-gap:2em;
+}
+.footer{
+    grid-area: footer;
+}
+.art1 {
+    grid-area: art1;
+}
+.art2 {
+    grid-area: art2;
+}
+.as1 {
+    grid-area: as1;
+}
+.as2 {
+    grid-area: as2;
+}
+.content {
+    display:grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer"
+}
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "as1 art1"
+    "art2 as2";
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+@media screen and (min-width:30em){
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "as1 art1"
+        "art2 as2";
+    }
+}
+
+@media screen and (min-width:37.5em){
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "as1 art1"
+        "art2 as2";
+       
+    }
+}
+
+@media screen and (min-width:48em){
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "as1 art1"
+        "art2 as2";
+    }
+
+}
+
+@media screen and (min-width:60em){
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "as1 art1"
+        "art2 as2";
+    }
+}
